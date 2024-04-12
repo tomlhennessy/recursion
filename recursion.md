@@ -78,3 +78,22 @@ Recap:
     - The basics covered in these notes serve as a foundation for tackling more complex recursive problems
     - Advanced recursion may involve more intricate patterns, multiple base cases, or optimisations to improve efficiency
     - Understanding the fundamentals prepares for delving deeper into recursion and applying it to various scenarios
+
+
+# Default Parameters
+
+Avoid repeating code with default parameters by providing fallback values directly in function declarations
+
+* What is a default parameter?
+    - Default parameters are values assigned to function parameters in their declaration
+    - Declared in the function signature, just like regular parameters
+    - Assigned default values using the `=` operator
+
+* Uses of default parameters
+    * __Adding flags to functions__:
+        - Flags like "verbose" can be toggled to control behaviour
+        - Default value ensures the function behaves predictably if the flag is not explicitly set
+
+    * __Receiving data from intermediate calculations__:
+        - Default parameters can store data from previous function calls
+        - Useful for passing data between recursive function calls or storing intermediate results
