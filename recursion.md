@@ -97,3 +97,42 @@ Avoid repeating code with default parameters by providing fallback values direct
     * __Receiving data from intermediate calculations__:
         - Default parameters can store data from previous function calls
         - Useful for passing data between recursive function calls or storing intermediate results
+
+
+# Recursion vs Iteration:
+
+1. Understand recursion's inner workings
+2. Differentiate between recursive and iterative functions
+3. Learn when to choose recursion or iteration for a problem
+
+* Deeper dive into recursion
+    - Direct recursion: functions call themselves
+    - Indirect recursion: multiple functions call each other, forming a loop
+
+* When to iterate, when to recur:
+    - Both recursion and iteration are techniques for solving problems, but each has its strengths and weaknesses
+    - When deciding which approach to use, consider factors such as problem complexity, readability, performance, and personal comfort with each method
+
+* Recursion for problems with clear subdivision into smaller tasks
+    - Recursion shines when a problem can be broken down into smaller, similar sub problems
+    - It's particularly useful when the problem exhibits a recursive structure, such as traversing nested data structures like arrays, objects, graphs, or trees
+
+* Iteration for simpler, resource-efficient solutions:
+    - Iterative solutions are often more straightforward to implement and understand, especially for simpler problems
+    - They tend to be more resource-efficient in terms of memory usage and execution time compared to recursive solutions
+    - Iteration is suitable when the problem can be solved by repeatedly applying a set of instructions without subdividing it into smaller tasks
+
+
+* Recap:
+
+1. Recognise and debug stack overflow issues:
+    - Understand the concept of stack overflow, which occurs when the call stack exceeds its maximum capacity
+    - Learn to identify and debug recursive functions that cause stack overflow errors by adding base cases to halt recursion
+
+2. Differentiate between iterative and recursive functions:
+    - Gain a clear understanding of the differences between iterative and recursive approaches to problem-solving
+    - Recognise when each approach is appropriate based on the characteristics of the problem at hand
+
+3. Identify suitable approaches for problem-solving:
+    - Develop the ability to assess problem complexity and select the most suitable approach (iteration or recursion) accordingly
+    - Consider factors such as problem structure, performance requirements, and readability when choosing between recursion and iteration
