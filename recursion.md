@@ -136,3 +136,32 @@ Avoid repeating code with default parameters by providing fallback values direct
 3. Identify suitable approaches for problem-solving:
     - Develop the ability to assess problem complexity and select the most suitable approach (iteration or recursion) accordingly
     - Consider factors such as problem structure, performance requirements, and readability when choosing between recursion and iteration
+
+
+# Recursion Tips
+
+1. Move towards the base case:
+    - This is the cornerstone of recursion
+    - Where the recursion stops and the function returns a value without calling itself again
+    - If not moving towards base case, it leads to a stack overflow error
+    - Ensure that with each call, you're making progress towards the base case
+
+2. Think of the function iteratively:
+    - Recursion can be mentally challenging to grasp
+    - Helps to think about how you would solve the problem iteratively, using loops
+    - Both recursion and iteration follow the same logic of moving from a start state towards an end state
+    - Recursion achieves this through function calls
+    - Iteration achieves this through loops
+    - Understanding the iterative approach can provide insights into structuring your recursive solution effectively
+
+3. Start from the base case:
+    - Often beneficial to start from the simplest case, which is typically the base case
+    - Understand what needs to happen when the problem reaches its simplest form
+    - Then build the solution up from there, handling more complex cases step by step
+    - Starting from base case helps in understanding the problem's structure and devising an effective recursive strategy
+
+4. Assume your recursive function works:
+    - This mindset shift is critical in mastering recursion
+    - It can be challenging to trust a recursive function that you haven't fully implemented yet
+    - Assuming that the function works allows you to focus on the problem-solving logic rather than getting bogged down in implementation details
+    - Trust that, as long as you're moving towards the base case, the recursive function will eventually produce the correct result
